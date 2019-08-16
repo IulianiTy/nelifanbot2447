@@ -5,6 +5,7 @@
  */
 
 const Files = require(require('path').join(__dirname, 'js', 'Main.js')).Files;
+bot.login(process.env.token);
 
 if(!process.send) {
 
@@ -17,5 +18,3 @@ process.on('message', function(content) {
 });
 
 }
-
-bot.login(process.env.token);
